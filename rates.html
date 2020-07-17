@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<link rel="shortcut icon" href="img/ico.png" type="image/x-icon">
+ 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<meta charset="UTF-8">
+	<title>Тарифы</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- font-awesome -->
+	<link rel="stylesheet" href="Новая папка/css/all.min.css">
+	<link rel="stylesheet" href="libs/font-awesome/all.css">
+	<script defer src="libs/font-awesome/all.js"></script>
+	<!-- главный css файл -->
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
+	<script
+  	src="https://code.jquery.com/jquery-3.5.1.js"
+ 	 integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  	crossorigin="anonymous"></script>
+  	<script defer src="https://rawgit.com/leafo/sticky-kit/v1.1.2/jquery.sticky-kit.min.js" ></script>
+	<script defer src="js/slick.min.js"></script>
+ 	<script defer src="js/main.js"></script>
+</head>
+<body>
+	<nav id="AspNavMenu">
+        <div class="AspRegister">
+            <a href="reg.html" class="AspBtn AspBtnSuccess">Войти</a>
+            <p class="AspDescText">Присоединяйтесь и побеждайте</p>
+        </div>
+        <div class="AspMenuCont">
+            <ul>
+                <li>
+                	<i class="far fa-home-alt"></i><a href="index.html">Главная</a>
+                </li>
+                <li>
+                	<i class="far fa-futbol"></i><a class="for__link" href="#">Прогнозы <div href="#" class="forecasts__after">0</div></a>
+                </li>
+                <li>
+                	<i class="far fa-chart-line"></i><a href="statistic.html">Статистика</a>
+                </li>
+                <li>
+                	<i class="far fa-shield-alt"></i><a href="forecasts.html">Гарантии</a>
+                </li>
+                <li>
+                	<i class="far fa-list-alt"></i><a href="rates.html">Тарифы</a>
+                </li>
+                <li>
+                	<i class="far fa-percentage"></i><a href="sales.html">Акции</a>
+                </li>
+                <li>
+                	<i class="far fa-book"></i><a href="howto.html">Как пользоваться</a>
+                </li>
+                <li>
+                	<i class="fas fa-mountain"></i><a href="about.html">О нас</a>
+                </li>
+                <li>
+                	<i class="fas fa-business-time"></i><a href="vacancies.html">Вакансии</a>
+                </li>
+                <li>
+                	<i class="far fa-money-bill-wave"></i><a href="partners.html">Партнерам</a>
+                </li>
+             </ul>
+          </div>
+       </nav>
+	<header id="header">
+		<div class="menu ">
+			<div class="container_header">
+				<div class="header__burger">
+					<span></span>
+				</div>
+				<nav class="header__menu">
+					<ul class="main__menu">
+						<li class="menu__item">
+							<a href="index.html">Главная</a>
+						</li>
+						<li class="menu__item">
+							<a href="statistic.html">Статистика</a> 
+						</li>
+						<li class="menu__item">
+							<a href="forecasts.html">Гарантии</a>
+						</li>
+						<li class="menu__item">
+							<a href="rates.html">Тарифы</a>
+						</li>
+						<li class="menu__item">
+							<a href="vacancies.html">Вакансии</a>
+						</li>
+						<li class="menu__item">
+							<a href="about.html">О нас</a>
+						</li>
+						<li class="menu__item">
+							<a href="howto.html">Как пользоваться</a> 
+						</li>
+						<li class="menu__item">
+							<a href="partners.html">Партнерам</a>
+						</li>
+						<li class="menu__item">
+							<a href="sales.html">Акции</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+		<div class="bar">
+			<div class="container_header clearfix">
+				<a class="logo" href="#">
+					<span class="logo__span">Ai</span>sports
+				</a>
+				
+				<a class="btn header__btn" href="#">
+					Попробовать бесплатно
+				</a>
+				<a class="forecasts" href="#">
+					Прогнозы
+					<div href="#" class="forecasts__after">0</div>
+				</a>
+			</div>
+		</div>
+		<div class="desktop__video">
+			<div class="fullscreen-bg">
+	   			<div class="overlay">
+	        		<h1 class="rates__h1"> <span class="h1__span h1__span__rates">Подписки</span><br> Aisports предлагает 4 вида подписок. <br> Все подписки включают в себя прогнозирование событий Искуственным Интелектом. <br> <br> "BUSSINESS" и "EXPERT" откроют доступ к алгоритму расчета ставок.</h1>
+	    		</div>
+	    		<video loop="" muted="" autoplay="" poster="video/plane.jpg" class="fullscreen-bg__video">
+			        <source src="video/large (1).mp4" type="video/mp4">
+	    		</video>
+			</div>
+		</div>
+		<div class="media__video">
+			<div class="fullscreen-bg">
+	   			<div class="overlay">
+	        		<h1> <span class="h1__span">Подписки</span><br> Aisports предлагает 4 вида подписок. <br> Все подписки включают в себя прогнозирование событий Искуственным Интелектом. <br> <br> "BUSSINESS" и "EXPERT" откроют доступ к алгоритму расчета ставок.</h1>
+	    		</div>
+	    		<video loop="" muted="" autoplay="" poster="video/plane.jpg" class="fullscreen-bg__video">
+			        <source src="video/small.mp4" type="video/mp4">
+	    		</video>
+			</div>
+		</div>
+	</header>
+	<section id="guarantee">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-7">
+					<h2 class="guarantee__h3 text-uppercase">Мы гарантируем, что:</h2>
+					<p class="guarantee__li">Если вы не окупите подписку за время действия, мы бесплатно продлим ее до тех пор, пока вы не выйдите на окупаемость.</p>
+					<p class="guarantee__li">Если за месяц ставок с нами вы получите убыток, мы вернем стоимость всех приобретенных подписок.</p>
+					<p class="guarantee__li">Вы сможете получить помощь по вопросам работы сервиса в любое время.</p>
+					<a class="guarantee__btn" href="#">Подробнее о гарантиях</a>
+				</div>
+				<div class="col-md-5">
+					<img class="guarantee__img" src="img/gr1.png">
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="price">
+		<div class="container">
+			<div class="row pt-5 pb-5 price__row">
+				<div class="col-lg-6 col-md-6 price__item price__item__first mr-3">
+					<div class="price__date">1 день</div>
+					<div class="price__first__title text-uppercase"><span class="price__first__title__span">Регестрируйтесь</span> и получите в подарок</div>
+					<p class="price__li">3 прогноза в день</p>
+					<p class="price__li">прогнозы от ИИ</p>
+					<p class="price__li">Расчет суммы</p>
+					<p class="price__li">Гарантия продления</p>
+					<a class="price__btn" href="#">Активировать бесплатно</a>
+					<div class="price__active">Сегодня активировали <br> <span class="price__active__span">0 пользователей</span></div>
+				</div>
+				<div class="col-md-6 col-lg-3 price__item price__item__second mr-3">
+					<div class="price__title text-uppercase text-center">Celeb</div>
+					<p class="item__coast text-center text-uppercase">1590Р</p>
+					<div class="price__ul">
+						<p class="price__li">Гарантия продления</p>
+						<p class="price__li">Гарантия возврата </p>
+					</div>
+					<div class="price__ul">
+						<p class="price__li">Расчеты суммы</p>
+					</div>
+					<div class="price__ul">
+						<p class="price__li">Прогнозы по линии</p>
+						<p class="price__li">3 прогноза в день</p>
+						<p class="price__li">7 дней</p>
+					</div>
+					<p class="price__li">Средняя проходимость</p>
+					<a class="price__btn" href="#">Активировать</a>
+					<div class="price__active">Сегодня активировали <br> <span class="price__active__span">0 пользователей</span></div>
+				</div>
+				<div class="col-md-6 col-lg-3 price__item price__item__third mr-3">
+					<div class="offer__sale">Экономия 1305 руб.</div>
+					<div class="price__title price__title__business text-uppercase text-center pt-3	">Business</div>
+					<p class="item__coast text-center text-uppercase">1595Р <span class="item__coast__span">2900Р</span></p>
+					<div class="price__ul">
+						<p class="price__li">Гарантия продления</p>
+						<p class="price__li">Гарантия возврата </p>
+					</div>
+					<div class="price__ul">
+						<p class="price__li">Расчеты суммы</p>
+					</div>
+					<div class="price__ul">
+						<p class="price__li">Прогнозы по линии</p>
+						<p class="price__li">5 прогноза в день</p>
+						<p class="price__li">7 дней</p>
+					</div>
+					<p class="price__li">Средняя проходимость</p>
+					<a class="price__btn" href="#">Взять со скидкой</a>
+					<div class="price__active">Сегодня активировали <br> <span class="price__active__span">0 пользователей</span></div>
+				</div>
+				<div class="col-md-6 col-lg-3 price__item price__item__fourth">
+					<div class="price__title text-uppercase text-center">Expert</div>
+					<p class="item__coast text-center text-uppercase">7900Р</p>
+					<div class="price__ul">
+						<p class="price__li">Гарантия продления</p>
+						<p class="price__li">Гарантия возврата </p>
+					</div>
+					<div class="price__ul">
+						<p class="price__li">Расчеты суммы</p>
+					</div>
+					<div class="price__ul">
+						<p class="price__li">Прогнозы по линии</p>
+						<p class="price__li">70 прогноза в день</p>
+						<p class="price__li">7 дней</p>
+					</div>
+					<p class="price__li">Средняя проходимость</p>
+					<a class="price__btn" href="#">Активировать</a>
+					<div class="price__active">Сегодня активировали <br> <span class="price__active__span">0 пользователей</span></div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="returnguarantee">
+		<div class="container pt-5 pb-5">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="returnguarantee__content">
+						<img class="returnguarantee__img" src="img/гарантия.png">
+						<div class="returnguarantee__title">Гарантия полного возврата!</div>
+						<p class="returnguarantee__text text-center">Гарантируем полный возврат стоимости подписок за месяц, если наши прогнозы показали отрицательный результат. Условия возврата - соблюдение прогнозов и рекомендаций по размеру ставок и одновременное использование Lite и Pro аналитики.</p>
+						<a class="returnguarantee__btn" href="#">Подробнее</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="agreement">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<img src="img/speed.png">
+				</div>
+				<div class="col-md-6">
+					<div class="agreement__title text-uppercase">Пользовательское <br> соглашение</div>
+					<div class="agreement__text">Рекомендуем ознакомиться с пользовательским соглашение. В нем подробно указаны правила пользования сервисом.</div>
+					<a href="#" class="agreement__btn">Смотерть документ</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<div class="footer pb-2">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 pt-5 mb-4">
+						Questions? Contact us.
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4">
+						<ul>
+							<li>
+								<a href="#">FAQ</a>
+							</li>
+							<li>
+								<a href="#">Investor Relations</a>
+							</li>
+							<li>
+								<a href="#">Privacy</a>
+							</li>
+							<li>
+								<a href="#">Speed test</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-md-4">
+						<ul>
+							<li>
+								<a href="#">Help Center</a>
+							</li>
+							<li>
+								<a href="#">Jobs</a>
+							</li>
+							<li>
+								<a href="#">Cookie Preferences</a>
+							</li>
+							<li>
+								<a href="#">Legal Notices</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-md-4">
+						<ul>
+							<li>
+								<a href="#">Account</a>
+							</li>
+							<li>
+								<a href="#">Ways to Watch</a>
+							</li>
+							<li>
+								<a href="#">Corporate information</a>
+							</li>
+							<li>
+								<a href="#">Netflix Originals</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="credits">
+			<div class="container">
+				<div class="row pt-3">
+					<div class="col-md-12 credits__text pb-2">
+						Aisports.info не проводит игры на деньги, не принимает ставки, а оказывает исключительно консультационные услуги в виде прогнозов результатов в спортивных событий.
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12 copyright pt-2">
+						Copyright © 2020 Aisports.info All rights reserved.
+					</div>
+				</div>
+				<div class="row politic mt-2 pb-2">
+					<div class="col-md-12">
+						<ul class="politic__item">
+							<li>
+								<a href="#">Политика конфиденчиальности</a>
+							</li>
+							<li class="pl-2">
+								<a href="#">Использование Cookies</a>
+							</li>
+							<li class="pl-2">
+								<a href="#">Публичная оферта</a>
+							</li>
+							<li class="pl-2">
+								<a href="#">Пользовательское соглашение</a>
+							</li>
+							<li class="pl-2">
+								<a class="last__link" href="#">Условия возврата</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

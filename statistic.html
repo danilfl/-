@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<link rel="shortcut icon" href="img/ico.png" type="image/x-icon">
+ 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<meta charset="UTF-8">
+	<title>Статистика</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- font-awesome -->
+	<link rel="stylesheet" href="libs/font-awesome/all.min.css">
+	<link rel="stylesheet" href="libs/font-awesome/all.css">
+	<script defer src="libs/font-awesome/all.js"></script>
+	<!-- главный css файл -->
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
+	<script
+  	src="https://code.jquery.com/jquery-3.5.1.js"
+ 	 integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  	crossorigin="anonymous"></script>
+  	<script defer src="https://rawgit.com/leafo/sticky-kit/v1.1.2/jquery.sticky-kit.min.js" ></script>
+	<script defer src="js/slick.min.js"></script>
+ 	<script defer src="js/main.js"></script>
+</head>
+<body>
+	<nav id="AspNavMenu">
+        <div class="AspRegister">
+            <a href="reg.html" class="AspBtn AspBtnSuccess">Войти</a>
+            <p class="AspDescText">Присоединяйтесь и побеждайте</p>
+        </div>
+        <div class="AspMenuCont">
+            <ul>
+                <li>
+                	<i class="far fa-home-alt"></i><a href="index.html">Главная</a>
+                </li>
+                <li>
+                	<i class="far fa-futbol"></i><a class="for__link" href="#">Прогнозы <div href="#" class="forecasts__after">0</div></a>
+                </li>
+                <li>
+                	<i class="far fa-chart-line"></i><a href="statistic.html">Статистика</a>
+                </li>
+                <li>
+                	<i class="far fa-shield-alt"></i><a href="forecasts.html">Гарантии</a>
+                </li>
+                <li>
+                	<i class="far fa-list-alt"></i><a href="rates.html">Тарифы</a>
+                </li>
+                <li>
+                	<i class="far fa-percentage"></i><a href="sales.html">Акции</a>
+                </li>
+                <li>
+                	<i class="far fa-book"></i><a href="howto.html">Как пользоваться</a>
+                </li>
+                <li>
+                	<i class="fas fa-mountain"></i><a href="about.html">О нас</a>
+                </li>
+                <li>
+                	<i class="fas fa-business-time"></i><a href="vacancies.html">Вакансии</a>
+                </li>
+                <li>
+                	<i class="far fa-money-bill-wave"></i><a href="partners.html">Партнерам</a>
+                </li>
+             </ul>
+          </div>
+       </nav>
+	<header id="header">
+		<div class="menu ">
+			<div class="container_header">
+				<div class="header__burger">
+					<span></span>
+				</div>
+				<nav class="header__menu">
+					<ul class="main__menu">
+						<li class="menu__item">
+							<a href="index.html">Главная</a>
+						</li>
+						<li class="menu__item">
+							<a href="statistic.html">Статистика</a> 
+						</li>
+						<li class="menu__item">
+							<a href="forecasts.html">Гарантии</a>
+						</li>
+						<li class="menu__item">
+							<a href="rates.html">Тарифы</a>
+						</li>
+						<li class="menu__item">
+							<a href="vacancies.html">Вакансии</a>
+						</li>
+						<li class="menu__item">
+							<a href="about.html">О нас</a>
+						</li>
+						<li class="menu__item">
+							<a href="howto.html">Как пользоваться</a> 
+						</li>
+						<li class="menu__item">
+							<a href="partners.html">Партнерам</a>
+						</li>
+						<li class="menu__item">
+							<a href="sales.html">Акции</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+		<div class="bar">
+			<div class="container_header clearfix">
+				<a class="logo" href="#">
+					<span class="logo__span">Ai</span>sports
+				</a>
+				
+				<a class="btn header__btn" href="#">
+					Попробовать бесплатно
+				</a>
+				<a class="forecasts" href="#">
+					Прогнозы
+					<div href="#" class="forecasts__after">0</div>
+				</a>
+			</div>
+		</div>
+		<div class="desktop__video">
+			<div class="fullscreen-bg">
+	   			<div class="overlay">
+	        		<h1 class="statistic__h1"> <span class="h1__span h1__span__stat">Ваши победы вместе с aisports</span><br>Мы гордимся своим сервисом и открыто публикуем все результаты. <br> На странице вы увидите полную статистику Aisports со всеми победами, <br> поражениями и выигрышами.</h1>
+	    		</div>
+	    		<video loop="" muted="" autoplay="" poster="video/plane.jpg" class="fullscreen-bg__video">
+			        <source src="video/large (1).mp4" type="video/mp4">
+	    		</video>
+			</div>
+		</div>
+		<div class="media__video">
+			<div class="fullscreen-bg">
+	   			<div class="overlay">
+	   				<h1 class="statistic__h1"> <span class="h1__span h1__span__stat__media">Ваши победы вместе с aisports</span><br>Мы гордимся своим сервисом и открыто публикуем все результаты. <br> На странице вы увидите полную статистику Aisports со всеми победами, <br> поражениями и выигрышами.</h1>
+	    		</div>
+	    		<video loop="" muted="" autoplay="" poster="video/plane.jpg" class="fullscreen-bg__video">
+			        <source src="video/small.mp4" type="video/mp4">
+	    		</video>
+			</div>
+		</div>
+	</header>
+	<section id="results" class="results__stat">
+	<div class="container__header">
+		<div class="result__block">
+			<h3 class="results__title">Наши результаты</h3>
+			<table class="results__table ">
+				<tr class="tr__title">
+					<th class="border__th__first">Месяц</th>
+					<th>Выдано</th>
+					<th>Заработано</th>
+					<th class="border__th__second">Проходимость</th>
+				</tr>
+				<tr class="tr__item">
+					<th>Апрель</th>
+					<th>600</th>
+					<th>200,000 руб</th>
+					<th>87%</th>
+				</tr>
+				<tr class="tr__item">
+					<th>Май</th>
+					<th>240</th>
+					<th>43,000 руб</th>
+					<th>87%</th>
+				</tr>
+				<tr class="tr__item">
+					<th>Июню</th>
+					<th>0</th>
+					<th>0 руб</th>
+					<th>87%</th>
+				</tr>
+				<tr class="tr__item last__tr">
+					<th class="border__th__third">Июль</th>
+					<th>0</th>
+					<th>0 руб</th>
+					<th class="border__th__fourth">87%</th>
+				</tr>
+			</table>
+		</div>
+		<div class="slider">
+			<div class="slider__item">
+				<p class="slider__title">Наши результаты</p>
+				<div class="percent">67</div>
+				<div class="percent__title">Апрель</div>
+				<div class="slider__block">
+					<div class="slider__left">
+						<p>Выдано</p>
+						<p>Заработано</p>
+						<p>Проходимость</p>
+					</div>
+					<div class="slider__right">
+						<p>600</p>
+						<p>230,000 руб</p>
+						<p>67</p>
+					</div>
+				</div>
+			</div>
+			<div class="slider__item">
+				<p class="slider__title">Наши результаты</p>
+				<div class="percent">67</div>
+				<div class="percent__title">Апрель</div>
+				<div class="slider__block">
+					<div class="slider__left">
+						<p>Выдано</p>
+						<p>Заработано</p>
+						<p>Проходимость</p>
+					</div>
+					<div class="slider__right">
+						<p>600</p>
+						<p>230,000 руб</p>
+						<p>67</p>
+					</div>
+				</div>
+			</div>
+			<div class="slider__item">
+				<p class="slider__title">Наши результаты</p>
+				<div class="percent">67</div>
+				<div class="percent__title">Апрель</div>
+				<div class="slider__block">
+					<div class="slider__left">
+						<p>Выдано</p>
+						<p>Заработано</p>
+						<p>Проходимость</p>
+					</div>
+					<div class="slider__right">
+						<p>600</p>
+						<p>230,000 руб</p>
+						<p>67</p>
+					</div>
+				</div>
+			</div>
+			<div class="slider__item">
+				<p class="slider__title">Наши результаты</p>
+				<div class="percent">67</div>
+				<div class="percent__title">Апрель</div>
+				<div class="slider__block">
+					<div class="slider__left">
+						<p>Выдано</p>
+						<p>Заработано</p>
+						<p>Проходимость</p>
+					</div>
+					<div class="slider__right">
+						<p>600</p>
+						<p>230,000 руб</p>
+						<p>67</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+	</section>
+	<section id="statistics" class="pb-5">
+		<div class="container">
+			<h2 class="h2 pt-5 text-center text-uppercase">Подробная статистика</h2>
+			<div class="desktop">
+				<div class="row mt-5">
+					<div class="statistics__item col-md-12 d-flex">
+						<div class="row w-100">
+							<div class="col-md-2 d-flex">
+								<i class="fas fa-baseball-ball mr-4"></i>
+								<p class="pt-3">Мастерс. Лига А</p>
+							</div>
+							<div class="col-md-3 pt-3 media__block__date">
+								<p class="ml-3">Шамиль Хайруллин (Рос) - Ант...  П1</p>
+							</div>
+							<div class="col-md-2 pt-3 ">
+								<p class="ml-3">&emsp; к1,5  25.05.2020</p>
+							</div>
+							<div class="col-md-1 pt-1">
+								<p class="media__block"> <span class="up">Ставка </span> <br> 16,193</p>
+							</div>
+							<div class="col-md-1 pt-1">
+								<p class="media__block"><span class="up">Выигрыш </span><br> <span class="win__span">24,290</span></p>
+							</div>
+							<div class=" col-md-1 pt-1 lg-ml-3">
+								<p class="media__block"><span class="up">Доход </span> <br> <span class="income__span">+8,097</span></p>
+							</div>
+							<div class="col-md-2 float-right text-right">
+								<div class="statistics__btn">Победа</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="statistics__item col-md-12 d-flex">
+						<div class="row w-100">
+							<div class="col-md-2 d-flex">
+								<i class="fas fa-baseball-ball mr-4"></i>
+								<p class="pt-3">Мастерс. Лига А</p>
+							</div>
+							<div class="col-md-3 pt-3 media__block__date">
+								<p class="ml-3">Шамиль Хайруллин (Рос) - Ант...  П1</p>
+							</div>
+							<div class="col-md-2 pt-3 ">
+								<p class="ml-3">&emsp; к1,5  25.05.2020</p>
+							</div>
+							<div class="col-md-1 pt-1">
+								<p class="media__block"> <span class="up">Ставка </span> <br> 16,193</p>
+							</div>
+							<div class="col-md-1 pt-1">
+								<p class="media__block"><span class="up">Выигрыш </span><br> <span class="win__span">24,290</span></p>
+							</div>
+							<div class=" col-md-1 pt-1 lg-ml-3">
+								<p class="media__block"><span class="up">Доход </span> <br> <span class="income__span">+8,097</span></p>
+							</div>
+							<div class="col-md-2 float-right text-right">
+								<div class="statistics__btn">Победа</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="statistics__item col-md-12 d-flex">
+						<div class="row w-100">
+							<div class="col-md-2 d-flex">
+								<i class="fas fa-baseball-ball mr-4"></i>
+								<p class="pt-3">Мастерс. Лига А</p>
+							</div>
+							<div class="col-md-3 pt-3 media__block__date">
+								<p class="ml-3">Шамиль Хайруллин (Рос) - Ант...  П1</p>
+							</div>
+							<div class="col-md-2 pt-3 ">
+								<p class="ml-3">&emsp; к1,5  25.05.2020</p>
+							</div>
+							<div class="col-md-1 pt-1">
+								<p class="media__block"> <span class="up">Ставка </span> <br> 16,193</p>
+							</div>
+							<div class="col-md-1 pt-1">
+								<p class="media__block"><span class="up">Выигрыш </span><br> <span class="win__span">24,290</span></p>
+							</div>
+							<div class=" col-md-1 pt-1 lg-ml-3">
+								<p class="media__block"><span class="up">Доход </span> <br> <span class="income__span">+8,097</span></p>
+							</div>
+							<div class="col-md-2 float-right text-right">
+								<div class="statistics__btn">Победа</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row ">
+					<div class="statistics__item col-md-12 d-flex">
+						<div class="row w-100">
+							<div class="col-md-2 d-flex">
+								<i class="fas fa-baseball-ball mr-4"></i>
+								<p class="pt-3">Мастерс. Лига А</p>
+							</div>
+							<div class="col-md-3 pt-3 media__block__date">
+								<p class="ml-3">Шамиль Хайруллин (Рос) - Ант...  П1</p>
+							</div>
+							<div class="col-md-2 pt-3 ">
+								<p class="ml-3">&emsp; к1,5  25.05.2020</p>
+							</div>
+							<div class="col-md-1 pt-1">
+								<p class="media__block"> <span class="up">Ставка </span> <br> 16,193</p>
+							</div>
+							<div class="col-md-1 pt-1">
+								<p class="media__block"><span class="up">Выигрыш </span><br> <span class="win__span">24,290</span></p>
+							</div>
+							<div class=" col-md-1 pt-1 lg-ml-3">
+								<p class="media__block"><span class="up">Доход </span> <br> <span class="income__span">+8,097</span></p>
+							</div>
+							<div class="col-md-2 float-right text-right">
+								<div class="statistics__btn">Победа</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row ">
+					<div class="statistics__item col-md-12 d-flex">
+						<div class="row w-100">
+							<div class="col-md-2 d-flex">
+								<i class="fas fa-baseball-ball mr-4"></i>
+								<p class="pt-3">Мастерс. Лига А</p>
+							</div>
+							<div class="col-md-3 pt-3 media__block__date">
+								<p class="ml-3">Шамиль Хайруллин (Рос) - Ант...  П1</p>
+							</div>
+							<div class="col-md-2 pt-3 ">
+								<p class="ml-3">&emsp; к1,5  25.05.2020</p>
+							</div>
+							<div class="col-md-1 pt-1">
+								<p class="media__block"> <span class="up">Ставка </span> <br> 16,193</p>
+							</div>
+							<div class="col-md-1 pt-1">
+								<p class="media__block"><span class="up">Выигрыш </span><br> <span class="win__span">24,290</span></p>
+							</div>
+							<div class=" col-md-1 pt-1 lg-ml-3">
+								<p class="media__block"><span class="up">Доход </span> <br> <span class="income__span">+8,097</span></p>
+							</div>
+							<div class="col-md-2 float-right text-right">
+								<div class="statistics__btn">Победа</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="statistics__item col-md-12 d-flex">
+						<div class="row w-100">
+							<div class="col-md-2 d-flex">
+								<i class="fas fa-baseball-ball mr-4"></i>
+								<p class="pt-3">Мастерс. Лига А</p>
+							</div>
+							<div class="col-md-3 pt-3 media__block__date">
+								<p class="ml-3">Шамиль Хайруллин (Рос) - Ант...  П1</p>
+							</div>
+							<div class="col-md-2 pt-3 ">
+								<p class="ml-3">&emsp; к1,5  25.05.2020</p>
+							</div>
+							<div class="col-md-1 pt-1">
+								<p class="media__block"> <span class="up">Ставка </span> <br> 16,193</p>
+							</div>
+							<div class="col-md-1 pt-1">
+								<p class="media__block"><span class="up">Выигрыш </span><br> <span class="win__span">24,290</span></p>
+							</div>
+							<div class=" col-md-1 pt-1 lg-ml-3">
+								<p class="media__block"><span class="up">Доход </span> <br> <span class="income__span">+8,097</span></p>
+							</div>
+							<div class="col-md-2 float-right text-right">
+								<div class="statistics__btn">Победа</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="statistics__item col-md-12 d-flex">
+						<div class="row w-100">
+							<div class="col-md-2 d-flex">
+								<i class="fas fa-baseball-ball mr-4"></i>
+								<p class="pt-3">Мастерс. Лига А</p>
+							</div>
+							<div class="col-md-3 pt-3 media__block__date">
+								<p class="ml-3">Шамиль Хайруллин (Рос) - Ант...  П1</p>
+							</div>
+							<div class="col-md-2 pt-3 ">
+								<p class="ml-3">&emsp; к1,5  25.05.2020</p>
+							</div>
+							<div class="col-md-1 pt-1">
+								<p class="media__block"> <span class="up">Ставка </span> <br> 16,193</p>
+							</div>
+							<div class="col-md-1 pt-1">
+								<p class="media__block"><span class="up">Выигрыш </span><br> <span class="win__span">24,290</span></p>
+							</div>
+							<div class=" col-md-1 pt-1 lg-ml-3">
+								<p class="media__block"><span class="up">Доход </span> <br> <span class="income__span">+8,097</span></p>
+							</div>
+							<div class="col-md-2 float-right text-right">
+								<div class="statistics__btn">Победа</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="statistics__item col-md-12 d-flex">
+						<div class="row w-100">
+							<div class="col-md-2 d-flex">
+								<i class="fas fa-baseball-ball mr-4"></i>
+								<p class="pt-3">Мастерс. Лига А</p>
+							</div>
+							<div class="col-md-3 pt-3 media__block__date">
+								<p class="ml-3">Шамиль Хайруллин (Рос) - Ант...  П1</p>
+							</div>
+							<div class="col-md-2 pt-3 ">
+								<p class="ml-3">&emsp; к1,5  25.05.2020</p>
+							</div>
+							<div class="col-md-1 pt-1">
+								<p class="media__block"> <span class="up">Ставка </span> <br> 16,193</p>
+							</div>
+							<div class="col-md-1 pt-1">
+								<p class="media__block"><span class="up">Выигрыш </span><br> <span class="win__span">24,290</span></p>
+							</div>
+							<div class=" col-md-1 pt-1 lg-ml-3">
+								<p class="media__block"><span class="up">Доход </span> <br> <span class="income__span">+8,097</span></p>
+							</div>
+							<div class="col-md-2 float-right text-right">
+								<div class="statistics__btn">Победа</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="statistics__item col-md-12 d-flex">
+						<div class="row w-100">
+							<div class="col-md-2 d-flex">
+								<i class="fas fa-baseball-ball mr-4"></i>
+								<p class="pt-3">Мастерс. Лига А</p>
+							</div>
+							<div class="col-md-3 pt-3 media__block__date">
+								<p class="ml-3">Шамиль Хайруллин (Рос) - Ант...  П1</p>
+							</div>
+							<div class="col-md-2 pt-3 ">
+								<p class="ml-3">&emsp; к1,5  25.05.2020</p>
+							</div>
+							<div class="col-md-1 pt-1">
+								<p class="media__block"> <span class="up">Ставка </span> <br> 16,193</p>
+							</div>
+							<div class="col-md-1 pt-1">
+								<p class="media__block"><span class="up">Выигрыш </span><br> <span class="win__span">24,290</span></p>
+							</div>
+							<div class=" col-md-1 pt-1 lg-ml-3">
+								<p class="media__block"><span class="up">Доход </span> <br> <span class="income__span">+8,097</span></p>
+							</div>
+							<div class="col-md-2 float-right text-right">
+								<div class="statistics__btn">Победа</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="statistics__item col-md-12 d-flex">
+						<div class="row w-100">
+							<div class="col-md-2 d-flex">
+								<i class="fas fa-baseball-ball mr-4"></i>
+								<p class="pt-3">Мастерс. Лига А</p>
+							</div>
+							<div class="col-md-3 pt-3 media__block__date">
+								<p class="ml-3">Шамиль Хайруллин (Рос) - Ант...  П1</p>
+							</div>
+							<div class="col-md-2 pt-3 ">
+								<p class="ml-3">&emsp; к1,5  25.05.2020</p>
+							</div>
+							<div class="col-md-1 pt-1">
+								<p class="media__block"> <span class="up">Ставка </span> <br> 16,193</p>
+							</div>
+							<div class="col-md-1 pt-1">
+								<p class="media__block"><span class="up">Выигрыш </span><br> <span class="win__span">24,290</span></p>
+							</div>
+							<div class=" col-md-1 pt-1 lg-ml-3">
+								<p class="media__block"><span class="up">Доход </span> <br> <span class="income__span">+8,097</span></p>
+							</div>
+							<div class="col-md-2 float-right text-right">
+								<div class="statistics__btn">Победа</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="statistics__item col-md-12 d-flex">
+						<div class="row w-100">
+							<div class="col-md-2 d-flex">
+								<i class="fas fa-baseball-ball mr-4"></i>
+								<p class="pt-3">Мастерс. Лига А</p>
+							</div>
+							<div class="col-md-3 pt-3 media__block__date">
+								<p class="ml-3">Шамиль Хайруллин (Рос) - Ант...  П1</p>
+							</div>
+							<div class="col-md-2 pt-3 ">
+								<p class="ml-3">&emsp; к1,5  25.05.2020</p>
+							</div>
+							<div class="col-md-1 pt-1">
+								<p class="media__block"> <span class="up">Ставка </span> <br> 16,193</p>
+							</div>
+							<div class="col-md-1 pt-1">
+								<p class="media__block"><span class="up">Выигрыш </span><br> <span class="win__span">24,290</span></p>
+							</div>
+							<div class=" col-md-1 pt-1 lg-ml-3">
+								<p class="media__block"><span class="up">Доход </span> <br> <span class="income__span">+8,097</span></p>
+							</div>
+							<div class="col-md-2 float-right text-right">
+								<div class="statistics__btn">Победа</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="statistics__btn__group d-flex mt-4">
+					<a href="#" class="btn__first first__btn__statistics">Смотреть всю статистику</a>
+					<a href="#" class="btn__second second__btn__statistics">Смотреть прогнозы</a>
+				</div>
+			</div>
+		</div>
+		<div class="tablet">
+				<div class="pau mt-5">
+					<div class="statistics__item statistics__item__media">
+						<div class="statistics__media">
+							<i class="fas fa-baseball-ball"></i>
+							<p class="name">Мастерс. Лига А</p>
+							<p class="second__name">Шамиль Хайруллин (Рос) - Ант...  П1</p>
+							<p class="date">к1,5  25.05.2020</p>
+						</div>
+						<div class="statistics__media">
+							<p class="rate"> <span class="up">Ставка </span> <br> 16,193</p>
+							<p class="win"><span class="up">Выигрыш </span><br> <span class="win__span">24,290</span></p>
+							<p class="income"><span class="up">Доход </span> <br> <span class="income__span">+8,097</span></p>
+						</div>
+					</div>
+					<div class="exodus">Победа</div>
+				</div>
+				<div class="pau">
+					<div class="statistics__item statistics__item__media">
+						<div class="statistics__media">
+							<i class="fas fa-baseball-ball"></i>
+							<p class="name">Мастерс. Лига А</p>
+							<p class="second__name">Шамиль Хайруллин (Рос) - Ант...  П1</p>
+							<p class="date">к1,5  25.05.2020</p>
+						</div>
+						<div class="statistics__media">
+							<p class="rate"> <span class="up">Ставка </span> <br> 16,193</p>
+							<p class="win"><span class="up">Выигрыш </span><br> <span class="win__span">24,290</span></p>
+							<p class="income"><span class="up">Доход </span> <br> <span class="income__span">+8,097</span></p>
+						</div>
+					</div>
+					<div class="exodus">Победа</div>
+				</div>
+				<div class="pau">
+					<div class="statistics__item statistics__item__media">
+						<div class="statistics__media">
+							<i class="fas fa-baseball-ball"></i>
+							<p class="name">Мастерс. Лига А</p>
+							<p class="second__name">Шамиль Хайруллин (Рос) - Ант...  П1</p>
+							<p class="date">к1,5  25.05.2020</p>
+						</div>
+						<div class="statistics__media">
+							<p class="rate"> <span class="up">Ставка </span> <br> 16,193</p>
+							<p class="win"><span class="up">Выигрыш </span><br> <span class="win__span">24,290</span></p>
+							<p class="income"><span class="up">Доход </span> <br> <span class="income__span">+8,097</span></p>
+						</div>
+					</div>
+					<div class="exodus">Победа</div>
+				</div>
+				<div class="pau">
+					<div class="statistics__item statistics__item__media">
+						<div class="statistics__media">
+							<i class="fas fa-baseball-ball"></i>
+							<p class="name">Мастерс. Лига А</p>
+							<p class="second__name">Шамиль Хайруллин (Рос) - Ант...  П1</p>
+							<p class="date">к1,5  25.05.2020</p>
+						</div>
+						<div class="statistics__media">
+							<p class="rate"> <span class="up">Ставка </span> <br> 16,193</p>
+							<p class="win"><span class="up">Выигрыш </span><br> <span class="win__span">24,290</span></p>
+							<p class="income"><span class="up">Доход </span> <br> <span class="income__span">+8,097</span></p>
+						</div>
+					</div>
+					<div class="exodus">Победа</div>
+				</div>
+				<div class="pau">
+					<div class="statistics__item statistics__item__media">
+						<div class="statistics__media">
+							<i class="fas fa-baseball-ball"></i>
+							<p class="name">Мастерс. Лига А</p>
+							<p class="second__name">Шамиль Хайруллин (Рос) - Ант...  П1</p>
+							<p class="date">к1,5  25.05.2020</p>
+						</div>
+						<div class="statistics__media">
+							<p class="rate"> <span class="up">Ставка </span> <br> 16,193</p>
+							<p class="win"><span class="up">Выигрыш </span><br> <span class="win__span">24,290</span></p>
+							<p class="income"><span class="up">Доход </span> <br> <span class="income__span">+8,097</span></p>
+						</div>
+					</div>
+					<div class="exodus">Победа</div>
+				</div>
+				<div class="pau">
+					<div class="statistics__item statistics__item__media">
+						<div class="statistics__media">
+							<i class="fas fa-baseball-ball"></i>
+							<p class="name">Мастерс. Лига А</p>
+							<p class="second__name">Шамиль Хайруллин (Рос) - Ант...  П1</p>
+							<p class="date">к1,5  25.05.2020</p>
+						</div>
+						<div class="statistics__media">
+							<p class="rate"> <span class="up">Ставка </span> <br> 16,193</p>
+							<p class="win"><span class="up">Выигрыш </span><br> <span class="win__span">24,290</span></p>
+							<p class="income"><span class="up">Доход </span> <br> <span class="income__span">+8,097</span></p>
+						</div>
+					</div>
+					<div class="exodus">Победа</div>
+				</div>
+				<div class="pau">
+					<div class="statistics__item statistics__item__media">
+						<div class="statistics__media">
+							<i class="fas fa-baseball-ball"></i>
+							<p class="name">Мастерс. Лига А</p>
+							<p class="second__name">Шамиль Хайруллин (Рос) - Ант...  П1</p>
+							<p class="date">к1,5  25.05.2020</p>
+						</div>
+						<div class="statistics__media">
+							<p class="rate"> <span class="up">Ставка </span> <br> 16,193</p>
+							<p class="win"><span class="up">Выигрыш </span><br> <span class="win__span">24,290</span></p>
+							<p class="income"><span class="up">Доход </span> <br> <span class="income__span">+8,097</span></p>
+						</div>
+					</div>
+					<div class="exodus">Победа</div>
+				</div>
+				<div class="pau">
+					<div class="statistics__item statistics__item__media">
+						<div class="statistics__media">
+							<i class="fas fa-baseball-ball"></i>
+							<p class="name">Мастерс. Лига А</p>
+							<p class="second__name">Шамиль Хайруллин (Рос) - Ант...  П1</p>
+							<p class="date">к1,5  25.05.2020</p>
+						</div>
+						<div class="statistics__media">
+							<p class="rate"> <span class="up">Ставка </span> <br> 16,193</p>
+							<p class="win"><span class="up">Выигрыш </span><br> <span class="win__span">24,290</span></p>
+							<p class="income"><span class="up">Доход </span> <br> <span class="income__span">+8,097</span></p>
+						</div>
+					</div>
+					<div class="exodus">Победа</div>
+				</div>
+				<div class="pau">
+					<div class="statistics__item statistics__item__media">
+						<div class="statistics__media">
+							<i class="fas fa-baseball-ball"></i>
+							<p class="name">Мастерс. Лига А</p>
+							<p class="second__name">Шамиль Хайруллин (Рос) - Ант...  П1</p>
+							<p class="date">к1,5  25.05.2020</p>
+						</div>
+						<div class="statistics__media">
+							<p class="rate"> <span class="up">Ставка </span> <br> 16,193</p>
+							<p class="win"><span class="up">Выигрыш </span><br> <span class="win__span">24,290</span></p>
+							<p class="income"><span class="up">Доход </span> <br> <span class="income__span">+8,097</span></p>
+						</div>
+					</div>
+					<div class="exodus">Победа</div>
+				</div>
+				<div class="pau">
+					<div class="statistics__item statistics__item__media">
+						<div class="statistics__media">
+							<i class="fas fa-baseball-ball"></i>
+							<p class="name">Мастерс. Лига А</p>
+							<p class="second__name">Шамиль Хайруллин (Рос) - Ант...  П1</p>
+							<p class="date">к1,5  25.05.2020</p>
+						</div>
+						<div class="statistics__media">
+							<p class="rate"> <span class="up">Ставка </span> <br> 16,193</p>
+							<p class="win"><span class="up">Выигрыш </span><br> <span class="win__span">24,290</span></p>
+							<p class="income"><span class="up">Доход </span> <br> <span class="income__span">+8,097</span></p>
+						</div>
+					</div>
+					<div class="exodus">Победа</div>
+				</div>
+				<div class="statistics__btn__group mt-4">
+					<a href="#" class="btn__first first__btn__statistics media__btn__first">Смотреть всю статистику</a>
+					<a href="#" class="btn__second second__btn__statistics media__btn__second">Смотреть прогнозы</a>
+				</div>
+			</div>
+			
+		</div>
+	</section>
+	<footer>
+		<div class="footer pb-2">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 pt-5 mb-4">
+						Questions? Contact us.
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4">
+						<ul>
+							<li>
+								<a href="#">FAQ</a>
+							</li>
+							<li>
+								<a href="#">Investor Relations</a>
+							</li>
+							<li>
+								<a href="#">Privacy</a>
+							</li>
+							<li>
+								<a href="#">Speed test</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-md-4">
+						<ul>
+							<li>
+								<a href="#">Help Center</a>
+							</li>
+							<li>
+								<a href="#">Jobs</a>
+							</li>
+							<li>
+								<a href="#">Cookie Preferences</a>
+							</li>
+							<li>
+								<a href="#">Legal Notices</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-md-4">
+						<ul>
+							<li>
+								<a href="#">Account</a>
+							</li>
+							<li>
+								<a href="#">Ways to Watch</a>
+							</li>
+							<li>
+								<a href="#">Corporate information</a>
+							</li>
+							<li>
+								<a href="#">Netflix Originals</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="credits">
+			<div class="container">
+				<div class="row pt-3">
+					<div class="col-md-12 credits__text pb-2">
+						Aisports.info не проводит игры на деньги, не принимает ставки, а оказывает исключительно консультационные услуги в виде прогнозов результатов в спортивных событий.
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12 copyright pt-2">
+						Copyright © 2020 Aisports.info All rights reserved.
+					</div>
+				</div>
+				<div class="row politic mt-2 pb-2">
+					<div class="col-md-12">
+						<ul class="politic__item">
+							<li>
+								<a href="#">Политика конфиденчиальности</a>
+							</li>
+							<li class="pl-2">
+								<a href="#">Использование Cookies</a>
+							</li>
+							<li class="pl-2">
+								<a href="#">Публичная оферта</a>
+							</li>
+							<li class="pl-2">
+								<a href="#">Пользовательское соглашение</a>
+							</li>
+							<li class="pl-2">
+								<a class="last__link" href="#">Условия возврата</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

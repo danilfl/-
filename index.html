@@ -1,0 +1,942 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<link rel="shortcut icon" href="img/ico.png" type="image/x-icon">
+ 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<meta charset="UTF-8">
+	<title>Главная</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- font-awesome -->
+	<link rel="stylesheet" href="Новая папка/css/all.min.css">
+	<link rel="stylesheet" href="libs/font-awesome/all.css">
+	<script defer src="libs/font-awesome/all.js"></script>
+	<!-- главный css файл -->
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
+	<script
+  	src="https://code.jquery.com/jquery-3.5.1.js"
+ 	 integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  	crossorigin="anonymous"></script>
+  	<script defer src="https://rawgit.com/leafo/sticky-kit/v1.1.2/jquery.sticky-kit.min.js" ></script>
+	<script defer src="js/slick.min.js"></script>
+ 	<script defer src="js/main.js"></script>
+</head>
+<body>
+	<nav id="AspNavMenu">
+        <div class="AspRegister">
+            <a href="reg.html" class="AspBtn AspBtnSuccess">Войти</a>
+            <p class="AspDescText">Присоединяйтесь и побеждайте</p>
+        </div>
+        <div class="AspMenuCont">
+            <ul>
+                <li>
+                	<i class="far fa-home-alt"></i><a href="index.html">Главная</a>
+                </li>
+                <li>
+                	<i class="far fa-futbol"></i><a class="for__link" href="#">Прогнозы <div href="#" class="forecasts__after">0</div></a>
+                </li>
+                <li>
+                	<i class="far fa-chart-line"></i><a href="statistic.html">Статистика</a>
+                </li>
+                <li>
+                	<i class="far fa-shield-alt"></i><a href="forecasts.html">Гарантии</a>
+                </li>
+                <li>
+                	<i class="far fa-list-alt"></i><a href="rates.html">Тарифы</a>
+                </li>
+                <li>
+                	<i class="far fa-percentage"></i><a href="sales.html">Акции</a>
+                </li>
+                <li>
+                	<i class="far fa-book"></i><a href="howto.html">Как пользоваться</a>
+                </li>
+                <li>
+                	<i class="fas fa-mountain"></i><a href="about.html">О нас</a>
+                </li>
+                <li>
+                	<i class="fas fa-business-time"></i><a href="vacancies.html">Вакансии</a>
+                </li>
+                <li>
+                	<i class="far fa-money-bill-wave"></i><a href="partners.html">Партнерам</a>
+                </li>
+             </ul>
+          </div>
+       </nav>
+	<header id="header">
+		<img src="img/logo_header.png"  class="logo__header">
+		<a href="#">
+			<img src="img/acc.png" class="account">
+		</a>
+		
+		<div class="menu ">
+			<div class="container_header">
+				<div class="header__burger">
+					<span></span>
+				</div>
+				<nav class="header__menu">
+					<ul class="main__menu">
+						<li class="menu__item">
+							<a href="index.html">Главная</a>
+						</li>
+						<li class="menu__item">
+							<a href="statistic.html">Статистика</a> 
+						</li>
+						<li class="menu__item">
+							<a href="forecasts.html">Гарантии</a>
+						</li>
+						<li class="menu__item">
+							<a href="rates.html">Тарифы</a>
+						</li>
+						<li class="menu__item">
+							<a href="vacancies.html">Вакансии</a>
+						</li>
+						<li class="menu__item">
+							<a href="about.html">О нас</a>
+						</li>
+						<li class="menu__item">
+							<a href="howto.html">Как пользоваться</a> 
+						</li>
+						<li class="menu__item">
+							<a href="partners.html">Партнерам</a>
+						</li>
+						<li class="menu__item">
+							<a href="sales.html">Акции</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+		<div class="bar">
+			<div class="container_header clearfix">
+				<a class="logo" href="#">
+					<span class="logo__span">Ai</span>sports
+				</a>
+				
+				<a class="btn header__btn" href="#">
+					Попробовать бесплатно
+				</a>
+				<a class="forecasts" href="#">
+					Прогнозы
+					<div href="#" class="forecasts__after">0</div>
+				</a>
+			</div>
+		</div>
+		<div class="desktop__video">
+			<div class="fullscreen-bg">
+	   			<div class="overlay">
+	        		<h1> <span class="h1__span">Aisports. </span><br> Завтра уже наступило</h1>
+	        		<a class="header__btn" href="#">Попробуйте бесплатно</a>
+	    		</div>
+	    		<video loop="" muted="" autoplay="" poster="video/plane.jpg" class="fullscreen-bg__video">
+			        <source src="video/large (1).mp4" type="video/mp4">
+	    		</video>
+			</div>
+		</div>
+		<div class="media__video">
+			<div class="fullscreen-bg">
+	   			<div class="overlay">
+	        		<h1> <span class="h1__span">Aisports. </span><br> Завтра уже наступило</h1>
+        			<a class="header__btn" href="#">Попробуйте бесплатно</a>
+        			<a class="header__btn second__header__btn" href="#">Смотреть прогнозы</a>
+	    		</div>
+	    		<video loop="" muted="" autoplay="" poster="video/plane.jpg" class="fullscreen-bg__video">
+			        <source src="video/small.mp4" type="video/mp4">
+	    		</video>
+			</div>
+		</div>
+	</header>
+	<section id="technology" class="pb-5">
+		<div class="container">
+			<div class="row mt-3">
+				<div class="col-md-8">
+					<h2 class="h2  text-uppercase">Технология будущего уже в беттинге</h2>
+					<p class="discription mt-4">Искуственный интелект <span class="font-weight-bold">уже во всех сферах нашей жизни.</span>  Aisports использует его для анализа матчей и находит наиболее вероятные исходы спортивных событий</p>
+					<div class="technology__btn mt-4">
+						<a href="#" class="btn__first media__btn__first">Попробовать бесплатно</a>
+						<a href="#" class="btn__second media__btn__second">Как начать?</a>
+					</div>
+				</div>
+				<div class="col-md-4 mt-3">
+					<img src="img/main.png" class="technology__img">
+				</div>
+			</div>
+			<div class="row mt-5">
+				<div class="col-md-4 text-center">
+					<div class="technology__item"><i class="fad fa-joystick"></i></div>
+					<div class="technology__item__text font-weight-bold mt-2">Одна подписка. <br> Много-много игр.</div>
+				</div>
+				<div class="col-md-4 text-center">
+					<div class="technology__item technology__item__2"></div>
+					<div class="technology__item__text font-weight-bold mt-2">Без рекламы. <br> Без встроенных <br> покупок</div>
+				</div>
+				<div class="col-md-4 text-center">
+					<div class="technology__item technology__item__3"><i class=" fas fa-plane"></i></div>
+					<div class="technology__item__text font-weight-bold mt-2">Скачивайте любимые игры — <br>играйте онлайн или оффлайн.</div>
+				</div>
+			</div>
+			<div class="row mt-5">
+				<div class="col-md-4 text-center mt-3">
+					<div class="technology__item technology__item__4"><i class="fal fa-phone-laptop"></i></div>
+					<div class="technology__item__text font-weight-bold mt-2">Переключайтесь с iPhone <br> на iPad, Mac и Apple TV.</div>
+				</div>
+				<div class="col-md-4 text-center mt-3">
+					<div class="technology__item technology__item__5"></div>
+					<div class="technology__item__text font-weight-bold mt-2">Единый доступ <br> для вас и еше пяти <br> членов семьи.</div>
+				</div>
+				<div class="col-md-4 text-center mt-3">
+					<div class="technology__item technology__item__6"><i class="fad fa-lock-alt"></i></div>
+					<div class="technology__item__text font-weight-bold mt-2">Встроенная защита ваших <br>персональных данных.</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="warranty" class="pb-5 pt-5">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<img class="warranty__img pt-4 " src="img/main2.png">
+				</div>
+				<div class="col-md-8">
+					<h2 class="h2 text-uppercase">То, что ценнее слов.</h2>
+					<p class="discription mt-4">Искуственный интелект <span class="font-weight-bold">Aisports <span class="font-weight-bold">  превосходит спортивных аналитиков </span>, потаму что он опирается на статистические данные прошлых игр и технологии машинного обучения. <br> <span class="font-weight-bold"> Убедитеть сами. </span> <br> воспользуйтесь нашим <span class="font-weight-bold"> бесплатным тестовым периодом.</span></p>
+					<div class="warranty__btn mt-4">
+						<a href="#" class="btn__first warranty__btn__first media__btn__first">Наши гарантии</a>
+						<a href="#" class="btn__second warranty__btn__second media__btn__second">Статистика прогнозов</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="results">
+	<div class="container__header">
+		<div class="result__block">
+			<h3 class="results__title">Наши результаты</h3>
+			<table class="results__table ">
+				<tr class="tr__title">
+					<th class="border__th__first">Месяц</th>
+					<th>Выдано</th>
+					<th>Заработано</th>
+					<th class="border__th__second">Проходимость</th>
+				</tr>
+				<tr class="tr__item">
+					<th>Апрель</th>
+					<th>600</th>
+					<th>200,000 руб</th>
+					<th>87%</th>
+				</tr>
+				<tr class="tr__item">
+					<th>Май</th>
+					<th>240</th>
+					<th>43,000 руб</th>
+					<th>87%</th>
+				</tr>
+				<tr class="tr__item">
+					<th>Июню</th>
+					<th>0</th>
+					<th>0 руб</th>
+					<th>87%</th>
+				</tr>
+				<tr class="tr__item last__tr">
+					<th class="border__th__third">Июль</th>
+					<th>0</th>
+					<th>0 руб</th>
+					<th class="border__th__fourth">87%</th>
+				</tr>
+			</table>
+		</div>
+		<div class="slider">
+			<div class="slider__item">
+				<p class="slider__title">Наши результаты</p>
+				<div class="percent">67</div>
+				<div class="percent__title">Апрель</div>
+				<div class="slider__block">
+					<div class="slider__left">
+						<p>Выдано</p>
+						<p>Заработано</p>
+						<p>Проходимость</p>
+					</div>
+					<div class="slider__right">
+						<p>600</p>
+						<p>230,000 руб</p>
+						<p>67</p>
+					</div>
+				</div>
+			</div>
+			<div class="slider__item">
+				<p class="slider__title">Наши результаты</p>
+				<div class="percent">67</div>
+				<div class="percent__title">Апрель</div>
+				<div class="slider__block">
+					<div class="slider__left">
+						<p>Выдано</p>
+						<p>Заработано</p>
+						<p>Проходимость</p>
+					</div>
+					<div class="slider__right">
+						<p>600</p>
+						<p>230,000 руб</p>
+						<p>67</p>
+					</div>
+				</div>
+			</div>
+			<div class="slider__item">
+				<p class="slider__title">Наши результаты</p>
+				<div class="percent">67</div>
+				<div class="percent__title">Апрель</div>
+				<div class="slider__block">
+					<div class="slider__left">
+						<p>Выдано</p>
+						<p>Заработано</p>
+						<p>Проходимость</p>
+					</div>
+					<div class="slider__right">
+						<p>600</p>
+						<p>230,000 руб</p>
+						<p>67</p>
+					</div>
+				</div>
+			</div>
+			<div class="slider__item">
+				<p class="slider__title">Наши результаты</p>
+				<div class="percent">67</div>
+				<div class="percent__title">Апрель</div>
+				<div class="slider__block">
+					<div class="slider__left">
+						<p>Выдано</p>
+						<p>Заработано</p>
+						<p>Проходимость</p>
+					</div>
+					<div class="slider__right">
+						<p>600</p>
+						<p>230,000 руб</p>
+						<p>67</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+	</section>
+	<section id="statistics" class="pb-5">
+		<div class="container">
+			<h2 class="h2 pt-5 text-center text-uppercase">Детальная статистика прогнозов</h2>
+			<div class="desktop">
+				<div class="row mt-5">
+					<div class="statistics__item col-md-12 d-flex">
+						<div class="row w-100">
+							<div class="col-md-2 d-flex">
+								<i class="fas fa-baseball-ball mr-4"></i>
+								<p class="pt-3">Мастерс. Лига А</p>
+							</div>
+							<div class="col-md-3 pt-3 media__block__date">
+								<p class="ml-3">Шамиль Хайруллин (Рос) - Ант...  П1</p>
+							</div>
+							<div class="col-md-2 pt-3 ">
+								<p class="ml-3">&emsp; к1,5  25.05.2020</p>
+							</div>
+							<div class="col-md-1 pt-1">
+								<p class="media__block"> <span class="up">Ставка </span> <br> 16,193</p>
+							</div>
+							<div class="col-md-1 pt-1">
+								<p class="media__block"><span class="up">Выигрыш </span><br> <span class="win__span">24,290</span></p>
+							</div>
+							<div class=" col-md-1 pt-1 lg-ml-3">
+								<p class="media__block"><span class="up">Доход </span> <br> <span class="income__span">+8,097</span></p>
+							</div>
+							<div class="col-md-2 float-right text-right">
+								<div class="statistics__btn">Победа</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="statistics__item col-md-12 d-flex">
+						<div class="row w-100">
+							<div class="col-md-2 d-flex">
+								<i class="fas fa-baseball-ball mr-4"></i>
+								<p class="pt-3">Мастерс. Лига А</p>
+							</div>
+							<div class="col-md-3 pt-3 media__block__date">
+								<p class="ml-3">Шамиль Хайруллин (Рос) - Ант...  П1</p>
+							</div>
+							<div class="col-md-2 pt-3 ">
+								<p class="ml-3">&emsp; к1,5  25.05.2020</p>
+							</div>
+							<div class="col-md-1 pt-1">
+								<p class="media__block"> <span class="up">Ставка </span> <br> 16,193</p>
+							</div>
+							<div class="col-md-1 pt-1">
+								<p class="media__block"><span class="up">Выигрыш </span><br> <span class="win__span">24,290</span></p>
+							</div>
+							<div class=" col-md-1 pt-1 lg-ml-3">
+								<p class="media__block"><span class="up">Доход </span> <br> <span class="income__span">+8,097</span></p>
+							</div>
+							<div class="col-md-2 float-right text-right">
+								<div class="statistics__btn">Победа</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="statistics__item col-md-12 d-flex">
+						<div class="row w-100">
+							<div class="col-md-2 d-flex">
+								<i class="fas fa-baseball-ball mr-4"></i>
+								<p class="pt-3">Мастерс. Лига А</p>
+							</div>
+							<div class="col-md-3 pt-3 media__block__date">
+								<p class="ml-3">Шамиль Хайруллин (Рос) - Ант...  П1</p>
+							</div>
+							<div class="col-md-2 pt-3 ">
+								<p class="ml-3">&emsp; к1,5  25.05.2020</p>
+							</div>
+							<div class="col-md-1 pt-1">
+								<p class="media__block"> <span class="up">Ставка </span> <br> 16,193</p>
+							</div>
+							<div class="col-md-1 pt-1">
+								<p class="media__block"><span class="up">Выигрыш </span><br> <span class="win__span">24,290</span></p>
+							</div>
+							<div class=" col-md-1 pt-1 lg-ml-3">
+								<p class="media__block"><span class="up">Доход </span> <br> <span class="income__span">+8,097</span></p>
+							</div>
+							<div class="col-md-2 float-right text-right">
+								<div class="statistics__btn">Победа</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row ">
+					<div class="statistics__item col-md-12 d-flex">
+						<div class="row w-100">
+							<div class="col-md-2 d-flex">
+								<i class="fas fa-baseball-ball mr-4"></i>
+								<p class="pt-3">Мастерс. Лига А</p>
+							</div>
+							<div class="col-md-3 pt-3 media__block__date">
+								<p class="ml-3">Шамиль Хайруллин (Рос) - Ант...  П1</p>
+							</div>
+							<div class="col-md-2 pt-3 ">
+								<p class="ml-3">&emsp; к1,5  25.05.2020</p>
+							</div>
+							<div class="col-md-1 pt-1">
+								<p class="media__block"> <span class="up">Ставка </span> <br> 16,193</p>
+							</div>
+							<div class="col-md-1 pt-1">
+								<p class="media__block"><span class="up">Выигрыш </span><br> <span class="win__span">24,290</span></p>
+							</div>
+							<div class=" col-md-1 pt-1 lg-ml-3">
+								<p class="media__block"><span class="up">Доход </span> <br> <span class="income__span">+8,097</span></p>
+							</div>
+							<div class="col-md-2 float-right text-right">
+								<div class="statistics__btn">Победа</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row ">
+					<div class="statistics__item col-md-12 d-flex">
+						<div class="row w-100">
+							<div class="col-md-2 d-flex">
+								<i class="fas fa-baseball-ball mr-4"></i>
+								<p class="pt-3">Мастерс. Лига А</p>
+							</div>
+							<div class="col-md-3 pt-3 media__block__date">
+								<p class="ml-3">Шамиль Хайруллин (Рос) - Ант...  П1</p>
+							</div>
+							<div class="col-md-2 pt-3 ">
+								<p class="ml-3">&emsp; к1,5  25.05.2020</p>
+							</div>
+							<div class="col-md-1 pt-1">
+								<p class="media__block"> <span class="up">Ставка </span> <br> 16,193</p>
+							</div>
+							<div class="col-md-1 pt-1">
+								<p class="media__block"><span class="up">Выигрыш </span><br> <span class="win__span">24,290</span></p>
+							</div>
+							<div class=" col-md-1 pt-1 lg-ml-3">
+								<p class="media__block"><span class="up">Доход </span> <br> <span class="income__span">+8,097</span></p>
+							</div>
+							<div class="col-md-2 float-right text-right">
+								<div class="statistics__btn">Победа</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="statistics__item col-md-12 d-flex">
+						<div class="row w-100">
+							<div class="col-md-2 d-flex">
+								<i class="fas fa-baseball-ball mr-4"></i>
+								<p class="pt-3">Мастерс. Лига А</p>
+							</div>
+							<div class="col-md-3 pt-3 media__block__date">
+								<p class="ml-3">Шамиль Хайруллин (Рос) - Ант...  П1</p>
+							</div>
+							<div class="col-md-2 pt-3 ">
+								<p class="ml-3">&emsp; к1,5  25.05.2020</p>
+							</div>
+							<div class="col-md-1 pt-1">
+								<p class="media__block"> <span class="up">Ставка </span> <br> 16,193</p>
+							</div>
+							<div class="col-md-1 pt-1">
+								<p class="media__block"><span class="up">Выигрыш </span><br> <span class="win__span">24,290</span></p>
+							</div>
+							<div class=" col-md-1 pt-1 lg-ml-3">
+								<p class="media__block"><span class="up">Доход </span> <br> <span class="income__span">+8,097</span></p>
+							</div>
+							<div class="col-md-2 float-right text-right">
+								<div class="statistics__btn">Победа</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="statistics__btn__group d-flex mt-4">
+					<a href="#" class="btn__first first__btn__statistics">Смотреть всю статистику</a>
+					<a href="#" class="btn__second second__btn__statistics">Смотреть прогнозы</a>
+				</div>
+			</div>
+		</div>
+		<div class="tablet">
+				<div class="pau mt-5">
+					<div class="statistics__item statistics__item__media">
+						<div class="statistics__media">
+							<i class="fas fa-baseball-ball"></i>
+							<p class="name">Мастерс. Лига А</p>
+							<p class="second__name">Шамиль Хайруллин (Рос) - Ант...  П1</p>
+							<p class="date">к1,5  25.05.2020</p>
+						</div>
+						<div class="statistics__media">
+							<p class="rate"> <span class="up">Ставка </span> <br> 16,193</p>
+							<p class="win"><span class="up">Выигрыш </span><br> <span class="win__span">24,290</span></p>
+							<p class="income"><span class="up">Доход </span> <br> <span class="income__span">+8,097</span></p>
+						</div>
+					</div>
+					<div class="exodus">Победа</div>
+				</div>
+				<div class="pau">
+					<div class="statistics__item statistics__item__media">
+						<div class="statistics__media">
+							<i class="fas fa-baseball-ball"></i>
+							<p class="name">Мастерс. Лига А</p>
+							<p class="second__name">Шамиль Хайруллин (Рос) - Ант...  П1</p>
+							<p class="date">к1,5  25.05.2020</p>
+						</div>
+						<div class="statistics__media">
+							<p class="rate"> <span class="up">Ставка </span> <br> 16,193</p>
+							<p class="win"><span class="up">Выигрыш </span><br> <span class="win__span">24,290</span></p>
+							<p class="income"><span class="up">Доход </span> <br> <span class="income__span">+8,097</span></p>
+						</div>
+					</div>
+					<div class="exodus">Победа</div>
+				</div>
+				<div class="pau">
+					<div class="statistics__item statistics__item__media">
+						<div class="statistics__media">
+							<i class="fas fa-baseball-ball"></i>
+							<p class="name">Мастерс. Лига А</p>
+							<p class="second__name">Шамиль Хайруллин (Рос) - Ант...  П1</p>
+							<p class="date">к1,5  25.05.2020</p>
+						</div>
+						<div class="statistics__media">
+							<p class="rate"> <span class="up">Ставка </span> <br> 16,193</p>
+							<p class="win"><span class="up">Выигрыш </span><br> <span class="win__span">24,290</span></p>
+							<p class="income"><span class="up">Доход </span> <br> <span class="income__span">+8,097</span></p>
+						</div>
+					</div>
+					<div class="exodus">Победа</div>
+				</div>
+				<div class="pau">
+					<div class="statistics__item statistics__item__media">
+						<div class="statistics__media">
+							<i class="fas fa-baseball-ball"></i>
+							<p class="name">Мастерс. Лига А</p>
+							<p class="second__name">Шамиль Хайруллин (Рос) - Ант...  П1</p>
+							<p class="date">к1,5  25.05.2020</p>
+						</div>
+						<div class="statistics__media">
+							<p class="rate"> <span class="up">Ставка </span> <br> 16,193</p>
+							<p class="win"><span class="up">Выигрыш </span><br> <span class="win__span">24,290</span></p>
+							<p class="income"><span class="up">Доход </span> <br> <span class="income__span">+8,097</span></p>
+						</div>
+					</div>
+					<div class="exodus">Победа</div>
+				</div>
+				<div class="pau">
+					<div class="statistics__item statistics__item__media">
+						<div class="statistics__media">
+							<i class="fas fa-baseball-ball"></i>
+							<p class="name">Мастерс. Лига А</p>
+							<p class="second__name">Шамиль Хайруллин (Рос) - Ант...  П1</p>
+							<p class="date">к1,5  25.05.2020</p>
+						</div>
+						<div class="statistics__media">
+							<p class="rate"> <span class="up">Ставка </span> <br> 16,193</p>
+							<p class="win"><span class="up">Выигрыш </span><br> <span class="win__span">24,290</span></p>
+							<p class="income"><span class="up">Доход </span> <br> <span class="income__span">+8,097</span></p>
+						</div>
+					</div>
+					<div class="exodus">Победа</div>
+				</div>
+				<div class="statistics__btn__group mt-4">
+					<a href="#" class="btn__first first__btn__statistics media__btn__first">Смотреть всю статистику</a>
+					<a href="#" class="btn__second second__btn__statistics media__btn__second">Смотреть прогнозы</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="personality__sale__main">
+		<div class="container">
+			<h2 class="h2 text-center text-uppercase personality__sale__title">сервис Aisports прошел множество <br> проверок качества. <br> О нас пишут:</h2>
+		</div>
+		<div class="news__wrapper">
+			<div class="news__item">
+				<div class="news__side">
+					<img src="img/win.jpg">
+					<p class="news__title">Тема новости</p>
+					<a href="#" class="news__link">Читать полностью</a>
+				</div>
+				<div class="news__column">
+					<div class="column__block">
+						<img src="img/win.jpg">
+						<p class="news__title">Тема новости</p>
+						<a href="#" class="news__link">Читать полностью</a>
+					</div>
+					<div class="column__block column__block__bottom">
+						<img src="img/win.jpg">
+						<p class="news__title">Тема новости</p>
+						<a href="#" class="news__link">Читать полностью</a>
+					</div>
+				</div>
+				<div class="news__column">
+					<div class="column__block">
+						<img src="img/win.jpg">
+						<p class="news__title">Тема новости</p>
+						<a href="#" class="news__link">Читать полностью</a>
+					</div>
+					<div class="column__block column__block__bottom">
+						<img src="img/win.jpg">
+						<p class="news__title">Тема новости</p>
+						<a href="#" class="news__link">Читать полностью</a>
+					</div>
+				</div>
+				<div class="news__side">
+					<img src="img/win.jpg">
+					<p class="news__title">Тема новости</p>
+					<a href="#" class="news__link">Читать полностью</a>
+				</div>
+			</div>
+		</div>
+		<div class="news__slider">
+			<div class="news__side__slider">
+				<img src="img/win.jpg">
+				<p class="news__title__slider">Тема новости</p>
+				<a href="#" class="news__link__slider">Читать полностью</a>
+			</div>
+			<div class="news__side__slider">
+				<img src="img/win.jpg">
+				<p class="news__title__slider">Тема новости</p>
+				<a href="#" class="news__link__slider">Читать полностью</a>
+			</div>
+			<div class="news__side__slider">
+				<img src="img/win.jpg">
+				<p class="news__title__slider">Тема новости</p>
+				<a href="#" class="news__link__slider">Читать полностью</a>
+			</div>
+			<div class="news__side__slider">
+				<img src="img/win.jpg">
+				<p class="news__title__slider">Тема новости</p>
+				<a href="#" class="news__link__slider">Читать полностью</a>
+			</div>
+			<div class="news__side__slider">
+				<img src="img/win.jpg">
+				<p class="news__title__slider">Тема новости</p>
+				<a href="#" class="news__link__slider">Читать полностью</a>
+			</div>
+			<div class="news__side__slider">
+				<img src="img/win.jpg">
+				<p class="news__title__slider">Тема новости</p>
+				<a href="#" class="news__link__slider">Читать полностью</a>
+			</div>
+		</div>
+	</section>
+	<section id="price">
+		<div class="container">
+			<div class="row pt-5 pb-5 price__row">
+				<div class="col-lg-6 col-md-6 price__item price__item__first mr-3">
+					<div class="price__date">1 день</div>
+					<div class="price__first__title text-uppercase"><span class="price__first__title__span">Регестрируйтесь</span> и получите в подарок</div>
+					<p class="price__li">3 прогноза в день</p>
+					<p class="price__li">прогнозы от ИИ</p>
+					<p class="price__li">Расчет суммы</p>
+					<p class="price__li">Гарантия продления</p>
+					<a class="price__btn" href="#">Активировать бесплатно</a>
+					<div class="price__active">Сегодня активировали <br> <span class="price__active__span">0 пользователей</span></div>
+				</div>
+				<div class="col-md-6 col-lg-3 price__item price__item__second mr-3">
+					<div class="price__title text-uppercase text-center">Celeb</div>
+					<p class="item__coast text-center text-uppercase">1590Р</p>
+					<div class="price__ul">
+						<p class="price__li">Гарантия продления</p>
+						<p class="price__li">Гарантия возврата </p>
+					</div>
+					<div class="price__ul">
+						<p class="price__li">Расчеты суммы</p>
+					</div>
+					<div class="price__ul">
+						<p class="price__li">Прогнозы по линии</p>
+						<p class="price__li">3 прогноза в день</p>
+						<p class="price__li">7 дней</p>
+					</div>
+					<p class="price__li">Средняя проходимость</p>
+					<a class="price__btn" href="#">Активировать</a>
+					<div class="price__active">Сегодня активировали <br> <span class="price__active__span">0 пользователей</span></div>
+				</div>
+				<div class="col-md-6 col-lg-3 price__item price__item__third mr-3">
+					<div class="offer__sale">Экономия 1305 руб.</div>
+					<div class="price__title price__title__business text-uppercase text-center pt-3	">Business</div>
+					<p class="item__coast text-center text-uppercase">1595Р <span class="item__coast__span">2900Р</span></p>
+					<div class="price__ul">
+						<p class="price__li">Гарантия продления</p>
+						<p class="price__li">Гарантия возврата </p>
+					</div>
+					<div class="price__ul">
+						<p class="price__li">Расчеты суммы</p>
+					</div>
+					<div class="price__ul">
+						<p class="price__li">Прогнозы по линии</p>
+						<p class="price__li">5 прогноза в день</p>
+						<p class="price__li">7 дней</p>
+					</div>
+					<p class="price__li">Средняя проходимость</p>
+					<a class="price__btn" href="#">Взять со скидкой</a>
+					<div class="price__active">Сегодня активировали <br> <span class="price__active__span">0 пользователей</span></div>
+				</div>
+				<div class="col-md-6 col-lg-3 price__item price__item__fourth">
+					<div class="price__title text-uppercase text-center">Expert</div>
+					<p class="item__coast text-center text-uppercase">7900Р</p>
+					<div class="price__ul">
+						<p class="price__li">Гарантия продления</p>
+						<p class="price__li">Гарантия возврата </p>
+					</div>
+					<div class="price__ul">
+						<p class="price__li">Расчеты суммы</p>
+					</div>
+					<div class="price__ul">
+						<p class="price__li">Прогнозы по линии</p>
+						<p class="price__li">70 прогноза в день</p>
+						<p class="price__li">7 дней</p>
+					</div>
+					<p class="price__li">Средняя проходимость</p>
+					<a class="price__btn" href="#">Активировать</a>
+					<div class="price__active">Сегодня активировали <br> <span class="price__active__span">0 пользователей</span></div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="doitnow">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-2 d-flex align-items-center">
+					<img src="img/Polygon.png">
+					<div class="socialmedia__title">Aisports</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="doitnow__offer text-uppercase">
+						Начните бесплатно <br> уже сейчас <br>
+					</div>
+					 <span class="doitnow__offer__span">и от 250 руб/день после пробного периода</span>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<ul class="doitnow__ul">
+						<li class="doitnow__li">
+							Более 10 прогнозов в день.
+						</li>
+						<li class="doitnow__li">
+							Моментальные уведомления.
+						</li>
+						<li class="doitnow__li">
+							Расчет суммы ставки.
+						</li>
+						<li class="doitnow__li">
+							Гарантия продления на все подписки.
+						</li>
+						<li class="doitnow__li">
+							Поддержка 24/7.
+						</li>
+						<li class="doitnow__li">
+							Гарантия возврата средств для buisness и expert.
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<a href="#" class="doitnow__btn">Попробовать бесплано</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="question">
+		<div class="container">
+			<div class="row">
+				<div class="col md-12">
+					<div class="question__item">
+						<img src="img/footbal_bg.jpg">
+						<div class="question__title">Остались вопросы?</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="socialmedia">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-2 d-flex align-items-center socialmedia__logo">
+					<img src="img/Polygon.png">
+					<div class="socialmedia__title">Aisports</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="socialmedia__offer text-center">
+						Пробуйте. <br> Побеждайте. <br> Будьте первым.				
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="socialmedia__text col-md-12">
+					<div class=" text-center">
+						Подписывайтесь на наш telegram канал <br> и группу Вконтакте, чтобы первыми <br> узнать о новых возможностях <br> и выгоднейших акциях.			
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="socialmedia__arrow col-md-12"></div>
+			</div>
+			<div class="row socialmedia__items">
+				<div class="col-md-12 socialmedia__items socialmedia__items__second">
+					<div class="tg">
+						Telegram канал
+					</div>
+					<div class="tg">
+						Telegram уведомления
+					</div>
+					<div class="vk">
+						Сообщество Вконтакте
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="about">
+  		<video class="video" loop="loop" autoplay="" muted="">
+	      <source src="video/large (1).mp4" type="video/mp4" />
+    	</video>
+  		<div class="vertical_slide">
+         <div class="vertical_slide__item">Хотите узнать как это работает?</div>
+         <div class="vertical_slide__item">Для начала Aisports собирет <br> множество данных. <br> <br> Из самых разных источников. <br> От новостных сайтов и сайтов спортивной <br> аналитики, до обзоров и мнений различных <br> спортивных аналитиков из разных стран в <br> зависимости от соревнований. </div>
+         <div class="vertical_slide__item"> На этапе аналитики.<br> <br> Данные проходят через препроцессинг.<br> Добовляются дополнительные <br> характеристики, формируется датасет из <br> совокупности всез собранных данных.<br> Генерируются прогнозы в общем виде. </div>
+			<div class="vertical_slide__item"> Проверка данных.<br> <br>Происходит нашим модератором. Он отбирает <br>Прогнозы, в которых наиболее уверен нащ ИИ,<br>сверяет их с коеффициентами БК и ... </div>
+			<div class="vertical_slide__item"> Прогнозы публикуются на сайте.<br> <br>Да, такой казалось бы, простой путь - это <br>результат огромных усилий нашей команды<br>на протяжении года разработки, полугода <br> закрытого и 2-х месяцев работы, как <br> открытого сервиса для клиентов. </div>
+      </div>
+	</section>
+	<footer>
+		<div class="footer pb-2">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 pt-5 mb-4">
+						Questions? Contact us.
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4">
+						<ul>
+							<li>
+								<a href="#">FAQ</a>
+							</li>
+							<li>
+								<a href="#">Investor Relations</a>
+							</li>
+							<li>
+								<a href="#">Privacy</a>
+							</li>
+							<li>
+								<a href="#">Speed test</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-md-4">
+						<ul>
+							<li>
+								<a href="#">Help Center</a>
+							</li>
+							<li>
+								<a href="#">Jobs</a>
+							</li>
+							<li>
+								<a href="#">Cookie Preferences</a>
+							</li>
+							<li>
+								<a href="#">Legal Notices</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-md-4">
+						<ul>
+							<li>
+								<a href="#">Account</a>
+							</li>
+							<li>
+								<a href="#">Ways to Watch</a>
+							</li>
+							<li>
+								<a href="#">Corporate information</a>
+							</li>
+							<li>
+								<a href="#">Netflix Originals</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="credits">
+			<div class="container">
+				<div class="row pt-3">
+					<div class="col-md-12 credits__text pb-2">
+						Aisports.info не проводит игры на деньги, не принимает ставки, а оказывает исключительно консультационные услуги в виде прогнозов результатов в спортивных событий.
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12 copyright pt-2">
+						Copyright © 2020 Aisports.info All rights reserved.
+					</div>
+				</div>
+				<div class="row politic mt-2 pb-2">
+					<div class="col-md-12">
+						<ul class="politic__item">
+							<li>
+								<a href="#">Политика конфиденчиальности</a>
+							</li>
+							<li class="pl-2">
+								<a href="#">Использование Cookies</a>
+							</li>
+							<li class="pl-2">
+								<a href="#">Публичная оферта</a>
+							</li>
+							<li class="pl-2">
+								<a href="#">Пользовательское соглашение</a>
+							</li>
+							<li class="pl-2">
+								<a class="last__link" href="#">Условия возврата</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
